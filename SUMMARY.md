@@ -25,15 +25,15 @@
 ---
 
 * [第3部分 Android Studio](part-3.md)
-  * [chapter 1](part-3/chapter-1.md)
+  * [第1章 Android Studio 概述](part-3/chapter-1.md)
 
 ---
 
 * [第4部分 TeX](part-4.md)
-  * [chapter 1](part-4/chapter-1.md)
+  * [第1章 TeX 概述](part-4/chapter-1.md)
 
 ---
 
 * [第5部分 MatLab](part-5.md)
-  * [chapter 1](part-5/chapter-1.md)
+  * [第1章 MatLab 概述](part-5/chapter-1.md)
 
