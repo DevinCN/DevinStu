@@ -11,8 +11,8 @@
     * [2.3.Github 与其它平台的交互使用](part-1/chapter-2/2-3.md)
     * [2.4.Github 优秀项目介绍](part-1/chapter-2/2-4.md)
 * [第2部分 Markdown](part-2.md)
-  * [第1章 ](part-2/chapter-2-1.md)
-  * [第2章 ](part-2/chapter-2-2.md)
-  * [第3章 ](part-2/chapter-2-3.md)
+  * [第1章 Markdown 使用教程](part-2/chapter-2-1.md)
+  * [第2章 Markdown 基本语法](part-2/chapter-2-2.md)
+  * [第3章 Markdown 语法详解](part-2/chapter-2-3.md)
 * [第3部分 Android Studio 的使用](part-3.md)
 
