@@ -16,6 +16,6 @@
   * [第3章 Markdown 语法详解](part-2/chapter-2-3.md)
   * [第4章 Markdown 模板套用](part-2/chapter-2-4.md)
 * [第3部分 Android Studio](part-3.md)
-* [第4部分 ](part-4.md)
-* [第5部分 5](part-5.md)
+* [第4部分 TeX](part-4.md)
+* [第5部分 MatLab](part-5.md)
 
