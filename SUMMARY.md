@@ -1,7 +1,9 @@
 # Summary
 
 * [简介和说明](README.md)
+
 ---
+
 * [第1部分 Git 相关知识](part-1.md)
   * [第1章 Gitbook](part-1/chapter-1.md)
     * [1.1.Gitbook 使用](part-1/chapter-1/1-1.md)
@@ -11,19 +13,27 @@
     * [2.2.Github 基本操作](part-1/chapter-2/2-2.md)
     * [2.3.Github 与其它平台的交互使用](part-1/chapter-2/2-3.md)
     * [2.4.Github 优秀项目介绍](part-1/chapter-2/2-4.md)
+
 ---
+
 * [第2部分 Markdown](part-2.md)
-  * [第1章 Markdown 使用教程](part-2/chapter-2-1.md)
-  * [第2章 Markdown 基本语法](part-2/chapter-2-2.md)
-  * [第3章 Markdown 语法详解](part-2/chapter-2-3.md)
-  * [第4章 Markdown 模板套用](part-2/chapter-2-4.md)
+  * [第1章 Markdown 使用教程](part-2/chapter-1.md)
+  * [第2章 Markdown 基本语法](part-2/chapter-2.md)
+  * [第3章 Markdown 语法详解](part-2/chapter-3.md)
+  * [第4章 Markdown 模板套用](part-2/chapter-4.md)
+
 ---
+
 * [第3部分 Android Studio](part-3.md)
-  * [chapter 3 1](part-3/chapter-3-1.md)
+  * [chapter 1](part-3/chapter-1.md)
+
 ---
+
 * [第4部分 TeX](part-4.md)
-  * [chapter 4 1](part-4/chapter-4-1.md)
+  * [chapter 1](part-4/chapter-1.md)
+
 ---
+
 * [第5部分 MatLab](part-5.md)
-  * [chapter 5 1](part-5/chapter-5-1.md)
+  * [chapter 1](part-5/chapter-1.md)
 
