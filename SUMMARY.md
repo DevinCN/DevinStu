@@ -8,7 +8,7 @@
   * [第2章 Github](part-1/chapter-2.md)
 * [第2部分 Markdown](part-2.md)
   * [第1章 ](part-2/chapter-2-1.md)
-  * [chapter 2 2](part-2/chapter-2-2.md)
-  * [chapter 2 3](part-2/chapter-2-3.md)
+  * [第2章 ](part-2/chapter-2-2.md)
+  * [第3章 ](part-2/chapter-2-3.md)
 * [第3部分 Android Studio 的使用](part-3.md)
 
