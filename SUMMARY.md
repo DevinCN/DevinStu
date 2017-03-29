@@ -1,4 +1,4 @@
-# 目录
+# Summary
 
 * [简介和说明](README.md)
 * [第1部分 Git 相关](part-1.md)
@@ -26,7 +26,8 @@
     * [1.1.](part-3/chapter-1/1-1.md)
   * [第2章 Android Studio 快捷键整理](part-3/chapter-2.md)
     * [2.1.最常用快捷键](part-3/chapter-2/2-1.md)
-    * [2.2.](part-3/chapter-2/2-2.md)
+    * [2.2.不常用快捷键](part-3/chapter-2/2-2.md)
+    * [2 3](part-3/chapter-2/2-3.md)
 * [第4部分 TeX](part-4.md)
   * [第1章 TeX 概述](part-4/chapter-1.md)
     * [1.1.](part-4/chapter-1/1-1.md)
