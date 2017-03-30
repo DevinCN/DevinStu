@@ -62,8 +62,8 @@
     * [3.3.SQL 规约](part-7/chapter-3/3-3.md)
     * [3.4.ORM 规约](part-7/chapter-3/3-4.md)
   * [第4章 工程规约](part-7/chapter-4.md)
-    * [4.1.](part-7/chapter-4/4-1.md)
-    * [4.2.](part-7/chapter-4/4-2.md)
-    * [4.3.](part-7/chapter-4/4-3.md)
+    * [4.1.应用分层](part-7/chapter-4/4-1.md)
+    * [4.2.二方库规约](part-7/chapter-4/4-2.md)
+    * [4.3.服务器规约](part-7/chapter-4/4-3.md)
   * [第5章 安全规约](part-7/chapter-5.md)
 
