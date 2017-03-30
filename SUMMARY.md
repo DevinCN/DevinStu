@@ -36,6 +36,10 @@
     * [1.1.](part-5/chapter-1/1-1.md)
 * [第6部分 Gradle](part-6.md)
   * [第1章 Gradle 相关说明](part-6/chapter-1.md)
+    * [1.1.Gradle 简介](part-6/chapter-1/1-1.md)
+    * [1.2.Gradle 概述](part-6/chapter-1/1-2.md)
+    * [1.3.Gradle 安装](part-6/chapter-1/1-3.md)
+    * [1.4.Gradle 问题反馈](part-6/chapter-1/1-4.md)
   * [第2章 如何使用 Gradle 构建系统](part-6/chapter-2.md)
   * [第3章 构建系统过程中涉及的插件](part-6/chapter-3.md)
 
