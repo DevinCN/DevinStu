@@ -1,10 +1,6 @@
-如果你是名Android开发新手，或者是名从eclipse切换到Android studio的新手，那么我强烈建议您follow我的文章，正如封面所见，利用gradle构建工具来自动构建你的Android项目。废话不多说，我们直接开始吧。
+### 今天主要介绍Android Studio工具的使用，以及Gradle基础入门，使用Gradle wrapper和如何从Eclipse迁移到Android Studio。
 
-今天主要介绍Android studio工具的使用，以及cradle基础入门，使用cradle wrapper和如何从eclipse迁移到Android studio。
-
-这篇文章记于2015.12.30，Android studio正式版本已经开发到1.5，而预览版已经到了2.0，所以转到Android studio吧。
-
-当你第一次打开Android studio的时候，有一个视图显示你即将创建的环境以及确保你使用了最新的Android SDK和必要的google依赖包，同时会让你选择是否创建AVD，这样你就可以使用模拟器了。在这儿多说几句：
+### 当你第一次打开Android Studio的时候，有一个视图显示你即将创建的环境以及确保你使用了最新的Android SDK和必要的google依赖包，同时会让你选择是否创建AVD，这样你就可以使用模拟器了。在这儿多说几句：
 
 尽量使用Android studio 2.0，因为它真的变快了，而其模拟器的速度也提升了不少，我使用至今，也无发现任何bug,所以完全不用担心。
 如果使用模拟器开发Android，尽量使用Genymotion模拟器，尽管其现在的Android6.0仍然有很多bug,但是在其以下版本，其速度还是非常快的，利用模拟器开发，为虚拟机安装文件夹浏览器，是及时查看SQLite表文件利器，具体操作办法，可以google。
