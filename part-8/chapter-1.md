@@ -2,10 +2,10 @@
 
 ### 当你第一次打开Android Studio的时候，有一个视图显示你即将创建的环境以及确保你使用了最新的Android SDK和必要的google依赖包，同时会让你选择是否创建AVD，这样你就可以使用模拟器了。在这儿多说几句：
 
-尽量使用Android studio 2.0，因为它真的变快了，而其模拟器的速度也提升了不少，我使用至今，也无发现任何bug,所以完全不用担心。
-如果使用模拟器开发Android，尽量使用Genymotion模拟器，尽管其现在的Android6.0仍然有很多bug,但是在其以下版本，其速度还是非常快的，利用模拟器开发，为虚拟机安装文件夹浏览器，是及时查看SQLite表文件利器，具体操作办法，可以google。
-尽量使用最新的23.0.0以上的构建版本。
-理解基本的Gradle
+### 尽量使用Android studio 2.0，因为它真的变快了，而其模拟器的速度也提升了不少，我使用至今，也无发现任何bug,所以完全不用担心。
+### 如果使用模拟器开发Android，尽量使用Genymotion模拟器，尽管其现在的Android6.0仍然有很多bug,但是在其以下版本，其速度还是非常快的，利用模拟器开发，为虚拟机安装文件夹浏览器，是及时查看SQLite表文件利器，具体操作办法，可以google。
+### 尽量使用最新的23.0.0以上的构建版本。
+### 理解基本的Gradle
 如果你想创建一个Android project基于gradle,那么你必须写一个构建脚本，这个文件通常称之为build.grade,你可能已经觉察到了，当我们查看这一脚本，gradle会为我们提供很多默认的配置以及通常的默认值，而这极大的简化了我们的工作，例如ant和maven,使用他们的时候，我们需要编写大量的配置文件，而这很恶心。而gradle得默认配置，如果你需要使用自己的配置，完全可以简单的去重写他们就好。
 
 Gradle脚本不是像传统的xml文件那样，而是一种基于Groovy的动态DSL，而Groovy语言是一种基于jvm的动态语言。
@@ -15,7 +15,7 @@ Gradle脚本不是像传统的xml文件那样，而是一种基于Groovy的动�
 Project和tasks
 在grade中的两大重要的概念，分别是project和tasks。每一次构建都是有至少一个project来完成，所以Android studio中的project和Gradle中的project不是一个概念。每个project有至少一个tasks。每一个build.grade文件代表着一个project。tasks在build.gradle中定义。当初始化构建进程，gradle会基于build文件，集合所有的project和tasks,一个tasks包含了一系列动作，然后它们将会按照顺序执行，一个动作就是一段被执行的代码，很像Java中的方法。
 
-构建的生命周期
+# 构建的生命周期
 一旦一个tasks被执行，那么它不会再次执行了，不包含依赖的Tasks总是优先执行，一次构建将会经历下列三个阶段：
 
 初始化阶段：project实例在这儿创建，如果有多个模块，即有多个build.gradle文件，多个project将会被创建。
@@ -24,6 +24,7 @@ Project和tasks
 build.gradle的配置文件
 基于grade构建的项目通常至少有一个build.gradle，那么我们来看看Android的build.gradle：
 
+```
 buildscript {
    repositories {
         jcenter()
@@ -32,6 +33,9 @@ buildscript {
        classpath 'com.android.tools.build:gradle:1.2.3'
  } 
 }
+
+```
+
 这个就是实际构建开始的地方，在仓库地址中，我们使用了JCenter，JCenter类似maven库，不需要任何额外的配置，grade还支持其他几个仓库，不论是远程还是本地仓库。
 
 构建脚本也定义了一个Android构建工具，这个就是Android plugin的来源之处。Android plugin提供了所有需要去构建和测试的应用。每个Android应用都需要这么一个插件：
@@ -43,16 +47,21 @@ apply plugin: 'com.android.application'
 
 当使用Android 插件的时候，Android标签将可以被使用，如下所示：
 
+```
 android {
        compileSdkVersion 22
        buildToolsVersion "22.0.1"
 }
+
+```
+
 更多的属性我们将在第二章中进行讨论。
 
-项目结构
+# 项目结构
 和eclipse对比来看，Android studio构建的结构有很大的不同：
 
- MyApp
+```
+MyApp
    ├── build.gradle
    ├── settings.gradle
    └── app
@@ -66,7 +75,9 @@ android {
                └── res
                    ├── drawable
                    ├── layout
-                   └── etc.
+                   └── etc. 
+```
+
 grade项目通常在根文件夹中包含一个build.gradle，使用的代码在app这个文件夹中，这个文件夹也可以使用其他名字，而不必要定义为app,例如当你利用Android studio创建一个project针对一个手机应用和一个Android wear应用的时候，模块将被默认叫做application和wearable。
 
 gradle使用了一个叫做source set的概念，官方解释：一个source set就是一系列资源文件，其将会被编译和执行。对于Android项目，main就是一个source set，其包含了所有的资源代码。当你开始编写测试用例的时候，你一般会把代码放在一个单独的source set，叫做androidTest，这个文件夹只包含测试。
@@ -76,14 +87,18 @@ grade只是一个构建工具，而新版本总是在更迭，所以使用Gradle
 
 你也可以利用命令行./gradlew -v来查看当前gradle版本。下列是wrapper的文件夹：
 
-   myapp/
-   ├── gradlew
-   ├── gradlew.bat
-   └── gradle/wrapper/
-       ├── gradle-wrapper.jar
-       └── gradle-wrapper.properties
+```
+myapp/
+├── gradlew
+├── gradlew.bat
+└── gradle/wrapper/
+├── gradle-wrapper.jar
+└── gradle-wrapper.properties
+```
+
 可以看到一个bat文件针对windows系统，一个shell脚本针对mac系统，一个jar文件，一个配置文件。配置文件包含以下信息：
 
+```
 #Sat May 30 17:41:49 CEST 2015
    distributionBase=GRADLE_USER_HOME
    distributionPath=wrapper/dists
@@ -91,6 +106,9 @@ grade只是一个构建工具，而新版本总是在更迭，所以使用Gradle
    zipStorePath=wrapper/dists
    distributionUrl=https\://services.gradle.org/distributions/
    gradle-2.4-all.zip
+
+```
+
 你可以改变该url来改变你的gradle版本。
 
 使用基本的构建命令
@@ -110,6 +128,7 @@ clean 清楚项目的output文件。
 保持旧的eclipse文件结构
 关于如何将eclipse项目导入Android studio本文不再介绍。
 
+```
 android {
      sourceSets {
        main {
@@ -124,12 +143,18 @@ android {
      androidTest.setRoot('tests')
     } 
 }
-    
+
+```
+
 在grade文件中配置，将会保存eclipse目录结构，当然，如果你有任何依赖的jar包，你需要告诉gradle它在哪儿，假设jar包会在一个叫做libs的文件夹内，那么你应该这么配置：
 
+```
 dependencies {
        compile fileTree(dir: 'libs', include: ['*.jar'])
 }
+
+```
+
 该行意为：将libs文件夹中所有的jar文件视为依赖包。
 
 总结
