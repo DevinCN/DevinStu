@@ -66,4 +66,5 @@
     * [4.2.二方库规约](part-7/chapter-4/4-2.md)
     * [4.3.服务器规约](part-7/chapter-4/4-3.md)
   * [第5章 安全规约](part-7/chapter-5.md)
+* [第8部分 Gradle for Android](part-8.md)
 
